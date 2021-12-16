@@ -22,7 +22,8 @@ public class Player {
     public Player() {
     }
 
-    public Player(String nickname, String guild, Integer heroes1, Integer heroes2, Integer heroes3, Integer titans, LocalDateTime dateTime, Boolean actual) {
+    public Player(String nickname, String guild, Integer heroes1, Integer heroes2, Integer heroes3,
+                  Integer titans, LocalDateTime dateTime, Boolean actual) {
         this.nickname = nickname;
         this.guild = guild;
         this.heroes1 = heroes1;
