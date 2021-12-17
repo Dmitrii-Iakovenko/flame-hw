@@ -2,6 +2,7 @@ package com.wutreg.flamehw.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
 import java.util.Objects;
@@ -9,7 +10,7 @@ import java.util.Objects;
 @Entity
 public class Player {
 
-    private @Id @GeneratedValue Long id;
+    private @Id @GeneratedValue(strategy = GenerationType.AUTO) Long id;
     private String nickname;
     private String guild;
     private Integer heroes1;
@@ -106,36 +107,36 @@ public class Player {
         this.actual = actual;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-//        if (!(o instanceof Player)) return false;
-        if (o == null || getClass() != o.getClass()) return false;
-        Player player = (Player) o;
-        return Objects.equals(id, player.id) && Objects.equals(nickname, player.nickname)
-                && Objects.equals(guild, player.guild) && Objects.equals(heroes1, player.heroes1)
-                && Objects.equals(heroes2, player.heroes2) && Objects.equals(heroes3, player.heroes3)
-                && Objects.equals(titans, player.titans) && Objects.equals(dateTime, player.dateTime)
-                && Objects.equals(actual, player.actual);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, nickname, guild, heroes1, heroes2, heroes3, titans, dateTime, actual);
-    }
-
-    @Override
-    public String toString() {
-        return "Player{" +
-                "id=" + id +
-                ", nickname='" + nickname + '\'' +
-                ", guild='" + guild + '\'' +
-                ", heroes1=" + heroes1 +
-                ", heroes2=" + heroes2 +
-                ", heroes3=" + heroes3 +
-                ", titans=" + titans +
-                ", dateTime=" + dateTime +
-                ", actual=" + actual +
-                '}';
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+////        if (!(o instanceof Player)) return false;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        Player player = (Player) o;
+//        return Objects.equals(id, player.id) && Objects.equals(nickname, player.nickname)
+//                && Objects.equals(guild, player.guild) && Objects.equals(heroes1, player.heroes1)
+//                && Objects.equals(heroes2, player.heroes2) && Objects.equals(heroes3, player.heroes3)
+//                && Objects.equals(titans, player.titans) && Objects.equals(dateTime, player.dateTime)
+//                && Objects.equals(actual, player.actual);
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(id, nickname, guild, heroes1, heroes2, heroes3, titans, dateTime, actual);
+//    }
+//
+//    @Override
+//    public String toString() {
+//        return "Player{" +
+//                "id=" + id +
+//                ", nickname='" + nickname + '\'' +
+//                ", guild='" + guild + '\'' +
+//                ", heroes1=" + heroes1 +
+//                ", heroes2=" + heroes2 +
+//                ", heroes3=" + heroes3 +
+//                ", titans=" + titans +
+//                ", dateTime=" + dateTime +
+//                ", actual=" + actual +
+//                '}';
+//    }
 }
