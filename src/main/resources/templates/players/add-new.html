@@ -1,0 +1,53 @@
+<div th:replace="fragments/header"></div>
+
+<h1 th:text="${something}"/>
+<!--        <th scope="col">Nickname</th>-->
+<!--        <th scope="col">Guild</th>-->
+<!--        <th scope="col">Heroes 1</th>-->
+<!--        <th scope="col">Heroes 2</th>-->
+<!--        <th scope="col">Heroes 3</th>-->
+<!--        <th scope="col">Titans</th>-->
+<!--        <th scope="col">Date Time</th>-->
+<!--        <th scope="col">Actual</th>-->
+
+
+
+<form>
+    <div class="mb-3">
+        <label for="nickname" class="form-label">Nickname</label>
+        <input type="text" class="form-control" id="nickname">
+    </div>
+    <div class="mb-3">
+        <label for="guild" class="form-label">Guild</label>
+        <input type="text" class="form-control" id="guild">
+    </div>
+    <div class="mb-3">
+        <label for="heroes1" class="form-label">Heroes 1</label>
+        <input type="text" class="form-control" id="heroes1">
+    </div>
+    <div class="mb-3">
+        <label for="heroes2" class="form-label">Heroes 2</label>
+        <input type="text" class="form-control" id="heroes2">
+    </div>
+    <div class="mb-3">
+        <label for="heroes3" class="form-label">Heroes 3</label>
+        <input type="text" class="form-control" id="heroes3">
+    </div>
+    <div class="mb-3">
+        <label for="titans" class="form-label">Titans</label>
+        <input type="text" class="form-control" id="titans">
+    </div>
+    <div class="mb-3">
+        <label for="datatime" class="form-label">Data Time</label>
+        <input type="text" class="form-control" id="datatime">
+    </div>
+    <div class="mb-3">
+        <label for="actual" class="form-label">Actual</label>
+        <input type="text" class="form-control" id="actual">
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+
+
+
+<div th:replace="fragments/footer"></div>
