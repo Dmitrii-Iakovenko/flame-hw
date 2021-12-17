@@ -1,13 +1,13 @@
 package com.wutreg.flamehw.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+
+import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.Objects;
 
 @Entity
+@Table(name = "players")
+@EnableAutoConfiguration
 public class Player {
 
     private @Id @GeneratedValue(strategy = GenerationType.AUTO) Long id;
