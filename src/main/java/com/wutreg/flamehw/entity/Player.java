@@ -125,18 +125,18 @@ public class Player {
 //        return Objects.hash(id, nickname, guild, heroes1, heroes2, heroes3, titans, dateTime, actual);
 //    }
 //
-//    @Override
-//    public String toString() {
-//        return "Player{" +
-//                "id=" + id +
-//                ", nickname='" + nickname + '\'' +
-//                ", guild='" + guild + '\'' +
-//                ", heroes1=" + heroes1 +
-//                ", heroes2=" + heroes2 +
-//                ", heroes3=" + heroes3 +
-//                ", titans=" + titans +
-//                ", dateTime=" + dateTime +
-//                ", actual=" + actual +
-//                '}';
-//    }
+    @Override
+    public String toString() {
+        return "Player{" +
+                "id=" + id +
+                ", nickname='" + nickname + '\'' +
+                ", guild='" + guild + '\'' +
+                ", heroes1=" + heroes1 +
+                ", heroes2=" + heroes2 +
+                ", heroes3=" + heroes3 +
+                ", titans=" + titans +
+                ", dateTime=" + dateTime +
+                ", actual=" + actual +
+                '}';
+    }
 }
